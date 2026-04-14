@@ -1,5 +1,6 @@
+
 /* ============================================================
-   AURA BLISS VILLA — Interactions & Animations
+   AURA BLISS VILLA — Premium Interactions & Animations
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,15 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
 
   // ─────────── NAVBAR SCROLL BEHAVIOR ───────────
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
 
   function handleNavScroll() {
     const scrollY = window.scrollY;
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       navbar.classList.remove('scrolled');
     }
-    lastScroll = scrollY;
   }
 
   window.addEventListener('scroll', handleNavScroll, { passive: true });
@@ -107,17 +106,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const spacesNext = document.getElementById('spacesNext');
 
   if (spacesCarousel && spacesPrev && spacesNext) {
-    const scrollAmount = 400;
+    const getScrollAmount = () => {
+      const card = spacesCarousel.querySelector('.space-card');
+      if (card) return card.offsetWidth + 24; // card width + gap
+      return 420;
+    };
 
     spacesPrev.addEventListener('click', () => {
-      spacesCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      spacesCarousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
     });
 
     spacesNext.addEventListener('click', () => {
-      spacesCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      spacesCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
     });
-
-    // Touch/swipe support is native via scroll-snap
   }
 
   // ─────────── CAROUSEL: REVIEWS ───────────
@@ -126,14 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const reviewsNext = document.getElementById('reviewsNext');
 
   if (reviewsCarousel && reviewsPrev && reviewsNext) {
-    const scrollAmount = 400;
+    const getScrollAmount = () => {
+      const card = reviewsCarousel.querySelector('.review-card');
+      if (card) return card.offsetWidth + 24;
+      return 420;
+    };
 
     reviewsPrev.addEventListener('click', () => {
-      reviewsCarousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      reviewsCarousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
     });
 
     reviewsNext.addEventListener('click', () => {
-      reviewsCarousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      reviewsCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
     });
   }
 
@@ -171,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = 'hidden';
   }
 
-  function closeLightbox() {
+  function closeLightboxFn() {
     lightbox.classList.remove('active');
     document.body.style.overflow = '';
   }
@@ -194,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLightboxImage();
   }
 
-  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightboxFn);
   if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
   if (lightboxPrev) lightboxPrev.addEventListener('click', prevImage);
 
@@ -202,18 +207,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lightbox) {
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox || e.target === lightbox.querySelector('.lightbox-content')) {
-        closeLightbox();
+        closeLightboxFn();
       }
     });
   }
 
   // Keyboard navigation for lightbox
   document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
 
     switch (e.key) {
       case 'Escape':
-        closeLightbox();
+        closeLightboxFn();
         break;
       case 'ArrowRight':
         nextImage();
@@ -233,8 +238,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const heroHeight = hero.offsetHeight;
 
       if (scrollY <= heroHeight) {
-        const parallaxOffset = scrollY * 0.25;
-        heroBg.style.transform = `scale(1.05) translateY(${parallaxOffset}px)`;
+        const parallaxOffset = scrollY * 0.2;
+        heroBg.style.transform = `scale(1.06) translateY(${parallaxOffset}px)`;
+      }
+    }, { passive: true });
+  }
+
+  // ─────────── VISUAL BREAK PARALLAX ───────────
+  const visualBreakBg = document.querySelector('.visual-break-bg img');
+  const visualBreak = document.querySelector('.visual-break');
+
+  if (visualBreakBg && visualBreak && window.innerWidth > 768) {
+    window.addEventListener('scroll', () => {
+      const rect = visualBreak.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+        const offset = (progress - 0.5) * 60;
+        visualBreakBg.style.transform = `translateY(${offset}px) scale(1.05)`;
       }
     }, { passive: true });
   }
@@ -248,9 +270,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.getAttribute('id');
         navLinks.forEach(link => {
-          link.style.opacity = '';
+          link.classList.remove('active');
           if (link.getAttribute('href') === `#${sectionId}`) {
-            link.style.opacity = '1';
+            link.classList.add('active');
           }
         });
       }
@@ -275,7 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (reviewsCarousel.scrollLeft >= maxScroll - 10) {
           reviewsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
-          reviewsCarousel.scrollBy({ left: 400, behavior: 'smooth' });
+          const card = reviewsCarousel.querySelector('.review-card');
+          const scrollDist = card ? card.offsetWidth + 24 : 420;
+          reviewsCarousel.scrollBy({ left: scrollDist, behavior: 'smooth' });
         }
       }, 5000);
     }
@@ -292,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ─────────── COUNTER ANIMATION FOR RATINGS ───────────
-  const ratingNumbers = document.querySelectorAll('.cat-score, .big-number');
+  const ratingNumbers = document.querySelectorAll('.breakdown-val, .score-number');
 
   const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -302,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isNaN(target)) return;
 
         let current = 0;
-        const increment = target / 30;
+        const increment = target / 40;
         const isDecimal = target % 1 !== 0;
 
         const timer = setInterval(() => {
@@ -312,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(timer);
           }
           el.textContent = isDecimal ? current.toFixed(1) : Math.ceil(current).toString();
-        }, 40);
+        }, 35);
 
         counterObserver.unobserve(el);
       }
@@ -320,5 +344,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
 
   ratingNumbers.forEach(el => counterObserver.observe(el));
+
+  // ─────────── WHATSAPP BUTTON DELAY ───────────
+  const whatsappFloat = document.getElementById('whatsappFloat');
+  if (whatsappFloat) {
+    whatsappFloat.style.opacity = '0';
+    whatsappFloat.style.transform = 'scale(0.5) translateY(20px)';
+    whatsappFloat.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+    setTimeout(() => {
+      whatsappFloat.style.opacity = '1';
+      whatsappFloat.style.transform = 'scale(1) translateY(0)';
+    }, 2500);
+  }
 
 });

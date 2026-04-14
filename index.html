@@ -24,27 +24,25 @@
   <header class="navbar" id="navbar">
     <div class="container">
       <a href="#" class="nav-logo">Aura <span>Bliss</span> Villa</a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#experience">Experience</a>
         <a href="#spaces">Spaces</a>
-        <a href="#amenities">Amenities</a>
         <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
         <a href="#location">Location</a>
         <a href="#contact" class="nav-cta">Book Now</a>
-      </div>
-      <div class="nav-hamburger" id="navHamburger">
+      </nav>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </header>
 
   <!-- Mobile Nav Overlay -->
   <div class="mobile-nav-overlay" id="mobileNav">
     <nav>
-      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#spaces">Spaces</a>
-      <a href="#amenities">Amenities</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#location">Location</a>
@@ -73,17 +71,16 @@
         </div>
       </div>
 
-      <h1 class="reveal reveal-delay-1">Your Private<br><em>Escape in Auroville</em></h1>
+      <h1 class="reveal reveal-delay-1">Experience Private<br>Luxury <em>in Auroville</em></h1>
 
       <p class="hero-subtitle reveal reveal-delay-2">
-        A serene pool villa for up to 12 guests — nestled among greenery, minutes from the beach and Auroville's best
-        cafés.
+        A serene private pool villa for groups, families, and peaceful getaways
       </p>
 
       <div class="hero-cta-row reveal reveal-delay-3">
         <a href="https://wa.me/918056732468?text=Hi%2C%20I'm%20interested%20in%20booking%20Aura%20Bliss%20Villa.%20Could%20you%20share%20availability%3F"
           class="btn-primary" target="_blank" rel="noopener">Book Your Stay</a>
-        <a href="#about" class="btn-outline">Explore Villa</a>
+        <a href="#experience" class="btn-outline">Explore Villa</a>
       </div>
     </div>
 
@@ -93,83 +90,106 @@
     </div>
   </section>
 
-  <!-- ===================== STATS BAR ===================== -->
-  <section class="stats-bar">
+  <!-- ===================== QUICK HIGHLIGHTS ===================== -->
+  <section class="highlights-strip">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-icon">🏡</div>
-          <div class="stat-value">Entire Villa</div>
-          <div class="stat-label">Private Property</div>
+      <div class="highlights-grid">
+        <div class="highlight-item reveal">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div class="highlight-text">
+            <strong>Entire Private Villa</strong>
+            <span>The whole property is yours</span>
+          </div>
         </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <div class="stat-icon">👥</div>
-          <div class="stat-value">Up to 12</div>
-          <div class="stat-label">Guests</div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-item reveal reveal-delay-1">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <div class="highlight-text">
+            <strong>Up to 12 Guests</strong>
+            <span>3 bedrooms · 6 beds</span>
+          </div>
         </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <div class="stat-icon">🛏️</div>
-          <div class="stat-value">3 Bed · 6 Beds</div>
-          <div class="stat-label">Bedrooms</div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-item reveal reveal-delay-2">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 12h20M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10" />
+              <path d="M12 2c-2 3-3 6-3 10s1 7 3 10c2-3 3-6 3-10s-1-7-3-10z" />
+            </svg>
+          </div>
+          <div class="highlight-text">
+            <strong>Private Pool</strong>
+            <span>Sun-kissed & secluded</span>
+          </div>
         </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <div class="stat-icon">🚿</div>
-          <div class="stat-value">3.5</div>
-          <div class="stat-label">Bathrooms</div>
-        </div>
-        <div class="stat-item reveal reveal-delay-4">
-          <div class="stat-icon">⭐</div>
-          <div class="stat-value">5.0 / 5</div>
-          <div class="stat-label">100% Five-Star</div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-item reveal reveal-delay-3">
+          <div class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="highlight-text">
+            <strong>Near Beach & Cafés</strong>
+            <span>5–10 min from the coast</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section class="about" id="about">
+  <!-- ===================== EXPERIENCE / STORYTELLING ===================== -->
+  <section class="experience" id="experience">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-images reveal">
-          <div class="about-img-main">
-            <img src="Exterior/Home Section.avif" alt="Aura Bliss Villa exterior view surrounded by lush green garden"
-              loading="lazy">
+      <div class="experience-grid">
+        <div class="experience-visual reveal">
+          <div class="experience-img-stack">
+            <div class="experience-img-main">
+              <img src="Exterior/Home Section.avif"
+                alt="Aura Bliss Villa exterior view surrounded by lush green garden" loading="lazy">
+            </div>
+            <div class="experience-img-float">
+              <img src="Living Room/Home Section.avif"
+                alt="Cozy and well-furnished living room interior" loading="lazy">
+            </div>
           </div>
-          <div class="about-img-accent">
-            <img src="Living Room/Home Section.avif" alt="Cozy and well-furnished living room interior" loading="lazy">
-          </div>
+          <div class="experience-accent-line"></div>
         </div>
 
-        <div class="about-content">
-          <span class="section-label reveal">The Experience</span>
-          <h2 class="section-heading reveal reveal-delay-1">Welcome to<br>Aura Bliss Villa</h2>
-          <p class="reveal reveal-delay-2">
-            Tucked away in the peaceful village of Edayanchavadi, just minutes from Auroville's spiritual heart, Aura
-            Bliss Villa offers a rare blend of privacy, comfort, and natural beauty. This isn't just a stay — it's a
-            retreat into calm.
-          </p>
-          <p class="reveal reveal-delay-2">
-            Wake to birdsong, spend lazy afternoons by your private pool, and return from the beach to a home that feels
-            entirely your own. Every detail — from the spacious bedrooms to the fully equipped kitchen — is designed for
-            effortless relaxation.
-          </p>
+        <div class="experience-content">
+          <span class="section-tag reveal">The Experience</span>
+          <h2 class="reveal reveal-delay-1">A Stay Designed for<br><em>Peace & Comfort</em></h2>
 
-          <div class="about-ideal reveal reveal-delay-3">
-            <div class="ideal-item">
-              <span class="ideal-icon">👫</span> Couples
-            </div>
-            <div class="ideal-item">
-              <span class="ideal-icon">👨‍👩‍👧‍👦</span> Families
-            </div>
-            <div class="ideal-item">
-              <span class="ideal-icon">🎉</span> Friend Groups
-            </div>
+          <div class="experience-prose reveal reveal-delay-2">
+            <p>Tucked away in the peaceful village of Edayanchavadi, just minutes from Auroville's
+              spiritual heart, Aura Bliss Villa offers a rare blend of privacy, comfort, and natural beauty.</p>
+            <p>Wake to birdsong, spend lazy afternoons by your private pool, and return from the beach
+              to a home that feels entirely your own.</p>
           </div>
 
-          <div class="about-host reveal reveal-delay-4">
-            <div class="about-host-avatar">L</div>
-            <div class="about-host-info">
-              <strong>Hosted by Likhitha <span class="superhost-badge">⭐ Superhost</span></strong>
+          <div class="experience-tags reveal reveal-delay-3">
+            <span class="tag">👫 Couples</span>
+            <span class="tag">👨‍👩‍👧‍👦 Families</span>
+            <span class="tag">🎉 Friend Groups</span>
+          </div>
+
+          <div class="experience-host reveal reveal-delay-4">
+            <div class="host-avatar">L</div>
+            <div class="host-info">
+              <strong>Hosted by Likhitha <span class="superhost-pill">⭐ Superhost</span></strong>
               <span>Property managed by owner, Mr. Sanjay</span>
             </div>
           </div>
@@ -178,116 +198,130 @@
     </div>
   </section>
 
+  <!-- ===================== VISUAL BREAK ===================== -->
+  <section class="visual-break">
+    <div class="visual-break-bg">
+      <img src="Pool/6.avif" alt="Pool area at dusk with ambient lighting" loading="lazy">
+    </div>
+    <div class="visual-break-overlay"></div>
+    <div class="visual-break-content">
+      <p class="visual-break-quote reveal">Wake up to nature.</p>
+      <p class="visual-break-quote reveal reveal-delay-1">Unwind in <em>privacy.</em></p>
+    </div>
+  </section>
+
   <!-- ===================== SPACES ===================== -->
   <section class="spaces" id="spaces">
     <div class="container">
-      <div class="spaces-header">
-        <span class="section-label reveal">Explore The Villa</span>
-        <h2 class="section-heading reveal reveal-delay-1">Your Spaces to Unwind</h2>
-        <p class="section-subtext reveal reveal-delay-2">Every corner of Aura Bliss is designed for comfort — from
+      <div class="section-header">
+        <span class="section-tag reveal">Explore The Villa</span>
+        <h2 class="reveal reveal-delay-1">Your Spaces <em>to Unwind</em></h2>
+        <p class="section-sub reveal reveal-delay-2">Every corner of Aura Bliss is designed for comfort — from
           sun-drenched bedrooms to poolside lounging areas.</p>
       </div>
     </div>
 
-    <div class="container">
-      <div class="spaces-carousel-wrapper">
-        <div class="spaces-carousel" id="spacesCarousel">
+    <div class="spaces-scroll-wrapper">
+      <div class="spaces-track" id="spacesCarousel">
 
-          <div class="space-card reveal">
-            <div class="space-card-img">
-              <img src="Pool/Home Section.avif" alt="Private swimming pool with tropical garden setting" loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Private Pool</h3>
-              <p>Your own sun-kissed pool surrounded by tropical greenery — perfect for morning laps or lazy afternoon
-                floats.</p>
-            </div>
+        <article class="space-card reveal">
+          <div class="space-card-visual">
+            <img src="Pool/Home Section.avif" alt="Private swimming pool with tropical garden setting" loading="lazy">
+            <div class="space-card-overlay"></div>
           </div>
-
-          <div class="space-card reveal reveal-delay-1">
-            <div class="space-card-img">
-              <img src="Living Room/Home Section.avif" alt="Spacious living room with comfortable seating"
-                loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Living Room</h3>
-              <p>A bright, airy space with comfortable seating, TV, and Bluetooth sound system — ideal for gatherings
-                and downtime.</p>
-            </div>
+          <div class="space-card-body">
+            <h3>Private Pool</h3>
+            <p>Your own sun-kissed pool surrounded by tropical greenery — perfect for morning laps or lazy afternoon
+              floats.</p>
           </div>
+        </article>
 
-          <div class="space-card reveal reveal-delay-2">
-            <div class="space-card-img">
-              <img src="Bed Room 1/Home Section.avif" alt="Bedroom 1 with comfortable double bed and modern furnishing"
-                loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Bedroom One</h3>
-              <p>Air-conditioned comfort with premium linens, wardrobe storage, and a peaceful atmosphere for restful
-                nights.</p>
-            </div>
+        <article class="space-card reveal reveal-delay-1">
+          <div class="space-card-visual">
+            <img src="Living Room/Home Section.avif" alt="Spacious living room with comfortable seating" loading="lazy">
+            <div class="space-card-overlay"></div>
           </div>
-
-          <div class="space-card reveal reveal-delay-3">
-            <div class="space-card-img">
-              <img src="Bed Room 2/Home Section.avif" alt="Bedroom 2 with warm, cozy interior" loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Bedroom Two</h3>
-              <p>Equally spacious and well-appointed, with ceiling fans, cotton bed linen, and calming natural light.
-              </p>
-            </div>
+          <div class="space-card-body">
+            <h3>Living Room</h3>
+            <p>A bright, airy space with comfortable seating, TV, and Bluetooth sound system — ideal for gatherings
+              and downtime.</p>
           </div>
+        </article>
 
-          <div class="space-card reveal reveal-delay-4">
-            <div class="space-card-img">
-              <img src="Bed Room 3/Home Section.avif" alt="Bedroom 3 designed for relaxation" loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Bedroom Three</h3>
-              <p>A cozy retreat with everything you need — air conditioning, comfortable beds, and serene garden views.
-              </p>
-            </div>
+        <article class="space-card reveal reveal-delay-2">
+          <div class="space-card-visual">
+            <img src="Bed Room 1/Home Section.avif" alt="Bedroom 1 with comfortable double bed and modern furnishing"
+              loading="lazy">
+            <div class="space-card-overlay"></div>
           </div>
-
-          <div class="space-card reveal">
-            <div class="space-card-img">
-              <img src="Kitchen/Home Section.avif" alt="Fully equipped modern kitchen with dining setup" loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Kitchen & Dining</h3>
-              <p>A fully equipped kitchen with cookware, appliances, dining table, and all the essentials for
-                home-cooked meals.</p>
-            </div>
+          <div class="space-card-body">
+            <h3>Bedroom One</h3>
+            <p>Air-conditioned comfort with premium linens, wardrobe storage, and a peaceful atmosphere for restful
+              nights.</p>
           </div>
+        </article>
 
-          <div class="space-card reveal">
-            <div class="space-card-img">
-              <img src="Exterior/3.avif" alt="Outdoor seating area with garden view" loading="lazy">
-            </div>
-            <div class="space-card-content">
-              <h3>Garden & Outdoors</h3>
-              <p>Private fenced garden with outdoor dining, poolside seating, firepit, and BBQ grill for memorable
-                evenings.</p>
-            </div>
+        <article class="space-card reveal reveal-delay-3">
+          <div class="space-card-visual">
+            <img src="Bed Room 2/Home Section.avif" alt="Bedroom 2 with warm, cozy interior" loading="lazy">
+            <div class="space-card-overlay"></div>
           </div>
+          <div class="space-card-body">
+            <h3>Bedroom Two</h3>
+            <p>Equally spacious and well-appointed, with ceiling fans, cotton bed linen, and calming natural light.</p>
+          </div>
+        </article>
 
-        </div>
+        <article class="space-card reveal">
+          <div class="space-card-visual">
+            <img src="Bed Room 3/Home Section.avif" alt="Bedroom 3 designed for relaxation" loading="lazy">
+            <div class="space-card-overlay"></div>
+          </div>
+          <div class="space-card-body">
+            <h3>Bedroom Three</h3>
+            <p>A cozy retreat with everything you need — air conditioning, comfortable beds, and serene garden views.</p>
+          </div>
+        </article>
 
-        <div class="carousel-nav">
-          <button class="carousel-arrow" id="spacesPrev" aria-label="Previous space">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-          <button class="carousel-arrow" id="spacesNext" aria-label="Next space">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </div>
+        <article class="space-card reveal">
+          <div class="space-card-visual">
+            <img src="Kitchen/Home Section.avif" alt="Fully equipped modern kitchen with dining setup" loading="lazy">
+            <div class="space-card-overlay"></div>
+          </div>
+          <div class="space-card-body">
+            <h3>Kitchen & Dining</h3>
+            <p>A fully equipped kitchen with cookware, appliances, dining table, and all the essentials for
+              home-cooked meals.</p>
+          </div>
+        </article>
+
+        <article class="space-card reveal">
+          <div class="space-card-visual">
+            <img src="Exterior/3.avif" alt="Outdoor seating area with garden view" loading="lazy">
+            <div class="space-card-overlay"></div>
+          </div>
+          <div class="space-card-body">
+            <h3>Garden & Outdoors</h3>
+            <p>Private fenced garden with outdoor dining, poolside seating, firepit, and BBQ grill for memorable
+              evenings.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="spacesPrev" aria-label="Previous space">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button class="carousel-btn" id="spacesNext" aria-label="Next space">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -295,104 +329,104 @@
   <!-- ===================== AMENITIES ===================== -->
   <section class="amenities" id="amenities">
     <div class="container">
-      <div class="amenities-header">
-        <span class="section-label reveal">What's Included</span>
-        <h2 class="section-heading reveal reveal-delay-1">Everything You Need</h2>
-        <p class="section-subtext mx-auto reveal reveal-delay-2">From poolside to kitchen counter, every amenity is
+      <div class="section-header center">
+        <span class="section-tag reveal">What's Included</span>
+        <h2 class="reveal reveal-delay-1">Everything <em>You Need</em></h2>
+        <p class="section-sub reveal reveal-delay-2">From poolside to kitchen counter, every amenity is
           thoughtfully curated for a seamless, comfortable stay.</p>
       </div>
 
-      <div class="amenities-groups">
+      <div class="amenities-mosaic">
 
-        <div class="amenity-group reveal">
-          <div class="amenity-group-title">
-            <div class="group-icon">🏊</div>
-            Leisure & Outdoor
+        <div class="amenity-category reveal">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">🏊</span>
+            <h4>Leisure & Outdoor</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> Private swimming pool</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Private fenced garden</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Poolside seating areas</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Outdoor dining area</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Firepit</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> BBQ grill & utensils</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Outdoor shower</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Bicycles available</li>
+            <li>Private swimming pool</li>
+            <li>Private fenced garden</li>
+            <li>Poolside seating areas</li>
+            <li>Outdoor dining area</li>
+            <li>Firepit</li>
+            <li>BBQ grill & utensils</li>
+            <li>Outdoor shower</li>
+            <li>Bicycles available</li>
           </ul>
         </div>
 
-        <div class="amenity-group reveal reveal-delay-1">
-          <div class="amenity-group-title">
-            <div class="group-icon">🛏️</div>
-            Stay & Comfort
+        <div class="amenity-category reveal reveal-delay-1">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">🛏️</span>
+            <h4>Stay & Comfort</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> Air conditioning</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Ceiling fans</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Premium bed linen</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Cotton towels</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Wardrobe storage</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Iron</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Washing machine</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Hairdryer</li>
+            <li>Air conditioning</li>
+            <li>Ceiling fans</li>
+            <li>Premium bed linen</li>
+            <li>Cotton towels</li>
+            <li>Wardrobe storage</li>
+            <li>Iron</li>
+            <li>Washing machine</li>
+            <li>Hairdryer</li>
           </ul>
         </div>
 
-        <div class="amenity-group reveal reveal-delay-2">
-          <div class="amenity-group-title">
-            <div class="group-icon">🍳</div>
-            Kitchen & Dining
+        <div class="amenity-category reveal reveal-delay-2">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">🍳</span>
+            <h4>Kitchen & Dining</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> Fully equipped kitchen</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Fridge & freezer</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Cooking essentials</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Electric cooker</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Kettle & rice cooker</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Blender</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Crockery & cutlery</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Wine glasses</li>
+            <li>Fully equipped kitchen</li>
+            <li>Fridge & freezer</li>
+            <li>Cooking essentials</li>
+            <li>Electric cooker</li>
+            <li>Kettle & rice cooker</li>
+            <li>Blender</li>
+            <li>Crockery & cutlery</li>
+            <li>Wine glasses</li>
           </ul>
         </div>
 
-        <div class="amenity-group reveal reveal-delay-3">
-          <div class="amenity-group-title">
-            <div class="group-icon">📶</div>
-            Entertainment & Work
+        <div class="amenity-category reveal reveal-delay-3">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">📶</span>
+            <h4>Entertainment & Work</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> High-speed WiFi</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Dedicated workspace</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Smart TV</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Bluetooth speakers</li>
+            <li>High-speed WiFi</li>
+            <li>Dedicated workspace</li>
+            <li>Smart TV</li>
+            <li>Bluetooth speakers</li>
           </ul>
         </div>
 
-        <div class="amenity-group reveal reveal-delay-4">
-          <div class="amenity-group-title">
-            <div class="group-icon">🛎️</div>
-            Services & Extras
+        <div class="amenity-category reveal">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">🛎️</span>
+            <h4>Services & Extras</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> Breakfast provided</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Housekeeping (extra)</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Campfire setup (extra)</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Luggage drop-off</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Long-stay friendly</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Caretaker support</li>
+            <li>Breakfast provided</li>
+            <li>Housekeeping (extra)</li>
+            <li>Campfire setup (extra)</li>
+            <li>Luggage drop-off</li>
+            <li>Long-stay friendly</li>
+            <li>Caretaker support</li>
           </ul>
         </div>
 
-        <div class="amenity-group reveal">
-          <div class="amenity-group-title">
-            <div class="group-icon">🛡️</div>
-            Safety & Security
+        <div class="amenity-category reveal reveal-delay-1">
+          <div class="amenity-cat-header">
+            <span class="amenity-cat-icon">🛡️</span>
+            <h4>Safety & Security</h4>
           </div>
           <ul class="amenity-list">
-            <li class="amenity-item"><span class="check-icon">✓</span> Security cameras (exterior)</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Fire extinguisher</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> First aid kit</li>
-            <li class="amenity-item"><span class="check-icon">✓</span> Inverter power backup</li>
+            <li>Security cameras (exterior)</li>
+            <li>Fire extinguisher</li>
+            <li>First aid kit</li>
+            <li>Inverter power backup</li>
           </ul>
         </div>
 
@@ -403,59 +437,64 @@
   <!-- ===================== GALLERY ===================== -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <div class="gallery-header">
-        <span class="section-label reveal">Visual Tour</span>
-        <h2 class="section-heading reveal reveal-delay-1">A Glimpse Inside</h2>
-        <p class="section-subtext mx-auto reveal reveal-delay-2">Click any image to explore the spaces that make Aura
+      <div class="section-header center">
+        <span class="section-tag reveal">Visual Tour</span>
+        <h2 class="reveal reveal-delay-1">A Glimpse <em>Inside</em></h2>
+        <p class="section-sub reveal reveal-delay-2">Click any image to explore the spaces that make Aura
           Bliss feel like home.</p>
       </div>
 
-      <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item span-2 reveal" data-index="0">
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-item gi-tall reveal" data-index="0">
           <img src="Pool/3.avif" alt="Aerial view of the private pool area" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="1">
           <img src="Exterior/2.avif" alt="Villa exterior architectural detail" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="2">
           <img src="Living Room/873a78e5-2084-49fd-8b09-fe615378e9f4.avif" alt="Living room interior details"
             loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
-        <div class="gallery-item span-row reveal" data-index="3">
+        <div class="gallery-item gi-wide reveal" data-index="3">
           <img src="Pool/e7ccca6e-ceb6-4d4f-a7bc-bf4426c0929c.avif" alt="Pool view from the garden" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="4">
           <img src="Bed Room 1/39897384-9ccf-4cf4-9453-aa1a06c47bf5.avif" alt="Bedroom one interior" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="5">
           <img src="Kitchen/89104a21-87f1-43f4-8cc9-d3999383b02a.avif" alt="Kitchen interior" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
-        <div class="gallery-item reveal" data-index="6">
+        <div class="gallery-item gi-tall reveal" data-index="6">
           <img src="Bathroom 1/d0a82616-38cc-40f3-8a53-40479f2e1a2e.avif" alt="Bathroom with modern fixtures"
             loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
-        <div class="gallery-item span-2 reveal" data-index="7">
+        <div class="gallery-item gi-wide reveal" data-index="7">
           <img src="Pool/6.avif" alt="Pool area at dusk with ambient lighting" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="8">
           <img src="Bed Room 2/56a433a9-3045-4054-b462-5928cd0665c2.avif" alt="Bedroom two cozy interior"
             loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="9">
           <img src="Exterior/4.webp" alt="Villa entrance and pathway" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="10">
           <img src="Gallery/3.avif" alt="Villa garden and outdoor area" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
         <div class="gallery-item reveal" data-index="11">
           <img src="Pool/2.avif" alt="Poolside lounge chairs" loading="lazy">
-        </div>
-        <div class="gallery-item span-2 reveal" data-index="12">
-          <img src="Bathroom 3/31eeb8e5-bf62-4a24-9ff3-707e947d695e.avif" alt="Spacious bathroom with modern design"
-            loading="lazy">
-        </div>
-        <div class="gallery-item reveal" data-index="13">
-          <img src="Gallery/7.avif" alt="Villa ambiance and decor" loading="lazy">
+          <div class="gallery-item-overlay"><span>View</span></div>
         </div>
       </div>
     </div>
@@ -464,10 +503,23 @@
   <!-- Lightbox Modal -->
   <div class="lightbox" id="lightbox">
     <div class="lightbox-content">
-      <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">✕</button>
-      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
       <img src="" alt="Gallery image enlarged view" id="lightboxImg">
-      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
       <div class="lightbox-counter" id="lightboxCounter"></div>
     </div>
   </div>
@@ -475,65 +527,49 @@
   <!-- ===================== REVIEWS ===================== -->
   <section class="reviews" id="reviews">
     <div class="container">
-      <div class="reviews-header">
-        <span class="section-label reveal">Guest Stories</span>
-        <h2 class="section-heading reveal reveal-delay-1">What Our Guests Say</h2>
-      </div>
-
-      <div class="reviews-rating-summary reveal">
-        <div class="overall-rating">
-          <div class="big-number">5.0</div>
-          <div class="stars">★★★★★</div>
-          <div class="review-count">Based on 6 reviews · 100% five-star</div>
+      <div class="reviews-top">
+        <div class="reviews-score reveal">
+          <div class="score-number">5.0</div>
+          <div class="score-stars">★★★★★</div>
+          <div class="score-meta">100% five-star · 6 reviews</div>
         </div>
-        <div class="rating-categories">
-          <div class="rating-cat">
-            <div class="cat-score">5.0</div>
-            <div class="cat-label">Cleanliness</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:100%"></div>
-            </div>
+
+        <div class="reviews-breakdown reveal reveal-delay-1">
+          <div class="breakdown-item">
+            <span class="breakdown-label">Cleanliness</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:100%"></div></div>
+            <span class="breakdown-val">5.0</span>
           </div>
-          <div class="rating-cat">
-            <div class="cat-score">5.0</div>
-            <div class="cat-label">Location</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:100%"></div>
-            </div>
+          <div class="breakdown-item">
+            <span class="breakdown-label">Location</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:100%"></div></div>
+            <span class="breakdown-val">5.0</span>
           </div>
-          <div class="rating-cat">
-            <div class="cat-score">5.0</div>
-            <div class="cat-label">Value</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:100%"></div>
-            </div>
+          <div class="breakdown-item">
+            <span class="breakdown-label">Value</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:100%"></div></div>
+            <span class="breakdown-val">5.0</span>
           </div>
-          <div class="rating-cat">
-            <div class="cat-score">4.8</div>
-            <div class="cat-label">Accuracy</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:96%"></div>
-            </div>
+          <div class="breakdown-item">
+            <span class="breakdown-label">Accuracy</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:96%"></div></div>
+            <span class="breakdown-val">4.8</span>
           </div>
-          <div class="rating-cat">
-            <div class="cat-score">4.8</div>
-            <div class="cat-label">Check-in</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:96%"></div>
-            </div>
+          <div class="breakdown-item">
+            <span class="breakdown-label">Check-in</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:96%"></div></div>
+            <span class="breakdown-val">4.8</span>
           </div>
-          <div class="rating-cat">
-            <div class="cat-score">4.8</div>
-            <div class="cat-label">Communication</div>
-            <div class="cat-bar">
-              <div class="cat-bar-fill" style="width:96%"></div>
-            </div>
+          <div class="breakdown-item">
+            <span class="breakdown-label">Communication</span>
+            <div class="breakdown-bar"><div class="breakdown-fill" style="width:96%"></div></div>
+            <span class="breakdown-val">4.8</span>
           </div>
         </div>
       </div>
 
-      <div class="reviews-carousel-wrapper">
-        <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="reviews-carousel-area">
+        <div class="reviews-track" id="reviewsCarousel">
 
           <div class="review-card reveal">
             <div class="review-stars">★★★★★</div>
@@ -541,8 +577,8 @@
               clean, and the peaceful surroundings made it the perfect escape. Our group of friends had an unforgettable
               weekend here."</p>
             <div class="review-author">
-              <div class="review-author-avatar">R</div>
-              <div class="review-author-info">
+              <div class="review-avatar">R</div>
+              <div class="review-meta">
                 <strong>Rahul</strong>
                 <span>Group of 10 · Weekend getaway</span>
               </div>
@@ -555,8 +591,8 @@
               beautifully maintained, and feels completely private. The pool was the highlight, and the kids didn't want
               to leave!"</p>
             <div class="review-author">
-              <div class="review-author-avatar">P</div>
-              <div class="review-author-info">
+              <div class="review-avatar">P</div>
+              <div class="review-meta">
                 <strong>Priya</strong>
                 <span>Family of 8 · 3-night stay</span>
               </div>
@@ -569,8 +605,8 @@
               incredibly helpful. The location is perfect — close enough to the beach and cafés, yet completely
               peaceful."</p>
             <div class="review-author">
-              <div class="review-author-avatar">A</div>
-              <div class="review-author-info">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
                 <strong>Ananya</strong>
                 <span>Couple · Romantic getaway</span>
               </div>
@@ -583,8 +619,8 @@
               exactly as described — clean, comfortable, and the pool area is paradise. Already planning our next
               visit."</p>
             <div class="review-author">
-              <div class="review-author-avatar">K</div>
-              <div class="review-author-info">
+              <div class="review-avatar">K</div>
+              <div class="review-meta">
                 <strong>Karthik</strong>
                 <span>Group of 6 · Long weekend</span>
               </div>
@@ -596,8 +632,8 @@
             <p class="review-text">"A true hidden gem near Auroville. We hosted a birthday dinner by the pool with the
               BBQ setup and it was magical. The villa gave us the privacy and comfort of our own home, but better."</p>
             <div class="review-author">
-              <div class="review-author-avatar">S</div>
-              <div class="review-author-info">
+              <div class="review-avatar">S</div>
+              <div class="review-meta">
                 <strong>Sneha</strong>
                 <span>Group of 12 · Celebration</span>
               </div>
@@ -610,8 +646,8 @@
               breakfast was a nice touch, and the garden setting is so tranquil. Highly recommend for extended stays."
             </p>
             <div class="review-author">
-              <div class="review-author-avatar">D</div>
-              <div class="review-author-info">
+              <div class="review-avatar">D</div>
+              <div class="review-meta">
                 <strong>Deepak</strong>
                 <span>Couple · 7-night stay</span>
               </div>
@@ -620,14 +656,14 @@
 
         </div>
 
-        <div class="reviews-nav">
-          <button class="carousel-arrow" id="reviewsPrev" aria-label="Previous review">
+        <div class="reviews-controls">
+          <button class="carousel-btn" id="reviewsPrev" aria-label="Previous review">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
-          <button class="carousel-arrow" id="reviewsNext" aria-label="Next review">
+          <button class="carousel-btn" id="reviewsNext" aria-label="Next review">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M9 18l6-6-6-6" />
@@ -641,44 +677,46 @@
   <!-- ===================== LOCATION ===================== -->
   <section class="location" id="location">
     <div class="container">
-      <div class="location-grid">
+      <div class="location-layout">
         <div class="location-map reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.5!2d79.7897!3d12.0165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536195fae6e04d%3A0xabcd1234!2sEdayanchavadi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Aura Bliss Villa location on Google Maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.5!2d79.7897!3d12.0165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536195fae6e04d%3A0xabcd1234!2sEdayanchavadi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Aura Bliss Villa location on Google Maps">
           </iframe>
         </div>
 
-        <div class="location-content">
-          <span class="section-label reveal">Location</span>
-          <h2 class="section-heading reveal reveal-delay-1">Close to Everything,<br>Away from the Noise</h2>
+        <div class="location-info">
+          <span class="section-tag reveal">Location</span>
+          <h2 class="reveal reveal-delay-1">Close to Everything,<br><em>Away from the Noise</em></h2>
           <p class="reveal reveal-delay-2">Nestled in Edayanchavadi village in the Auroville bioregion — with the beach,
             cafés, and cultural sites all within easy reach.</p>
 
-          <div class="proximity-list">
-            <div class="proximity-item reveal reveal-delay-2">
-              <span class="proximity-icon">🏖️</span>
-              <div class="proximity-text">
+          <div class="distance-list">
+            <div class="distance-item reveal reveal-delay-2">
+              <span class="distance-icon">🏖️</span>
+              <div>
                 <strong>Beach Access</strong>
                 <span>5–10 minute drive to the nearest beaches</span>
               </div>
             </div>
-            <div class="proximity-item reveal reveal-delay-3">
-              <span class="proximity-icon">☕</span>
-              <div class="proximity-text">
+            <div class="distance-item reveal reveal-delay-3">
+              <span class="distance-icon">☕</span>
+              <div>
                 <strong>Cafés & Restaurants</strong>
                 <span>Auroville's best dining spots just minutes away</span>
               </div>
             </div>
-            <div class="proximity-item reveal reveal-delay-4">
-              <span class="proximity-icon">🌀</span>
-              <div class="proximity-text">
+            <div class="distance-item reveal reveal-delay-4">
+              <span class="distance-icon">🌀</span>
+              <div>
                 <strong>Matrimandir</strong>
                 <span>Close to Auroville's spiritual centre and attractions</span>
               </div>
             </div>
-            <div class="proximity-item reveal">
-              <span class="proximity-icon">🚗</span>
-              <div class="proximity-text">
+            <div class="distance-item reveal">
+              <span class="distance-icon">🚗</span>
+              <div>
                 <strong>Free Parking</strong>
                 <span>Private on-site parking included</span>
               </div>
@@ -692,9 +730,9 @@
   <!-- ===================== DETAILS / HOUSE RULES ===================== -->
   <section class="details" id="details">
     <div class="container">
-      <div class="details-header">
-        <span class="section-label reveal">Good to Know</span>
-        <h2 class="section-heading reveal reveal-delay-1">Stay Details & House Rules</h2>
+      <div class="section-header center">
+        <span class="section-tag reveal">Good to Know</span>
+        <h2 class="reveal reveal-delay-1">Stay Details & <em>House Rules</em></h2>
       </div>
 
       <div class="details-grid">
@@ -718,12 +756,12 @@
           <h4>Pets Welcome</h4>
           <p>Pets are allowed at Aura Bliss Villa — bring your furry friends along</p>
         </div>
-        <div class="detail-card reveal reveal-delay-4">
+        <div class="detail-card reveal">
           <div class="detail-icon">🔒</div>
           <h4>Security Deposit</h4>
           <p>A refundable caution deposit is required at check-in</p>
         </div>
-        <div class="detail-card reveal">
+        <div class="detail-card reveal reveal-delay-1">
           <div class="detail-icon">⚡</div>
           <h4>Power Backup</h4>
           <p>Inverter backup available for essential needs (no generator)</p>
@@ -732,26 +770,33 @@
     </div>
   </section>
 
-  <!-- ===================== CTA / BOOKING ===================== -->
-  <section class="cta-section" id="contact">
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="final-cta" id="contact">
+    <div class="final-cta-bg">
+      <img src="Exterior/Home Section.avif" alt="Villa exterior at golden hour" loading="lazy">
+    </div>
+    <div class="final-cta-overlay"></div>
     <div class="container">
-      <div class="cta-inner">
-        <span class="section-label reveal" style="color: var(--color-accent-warm);">Ready to Book?</span>
-        <h2 class="reveal reveal-delay-1">Experience Aura Bliss<br>for Yourself</h2>
-        <p class="reveal reveal-delay-2">Reserve your private villa in Auroville — the pool, the garden, the peace. It's
-          all yours.</p>
+      <div class="final-cta-inner">
+        <span class="section-tag light reveal">Ready to Book?</span>
+        <h2 class="reveal reveal-delay-1">Book Your<br><em>Private Escape</em></h2>
+        <p class="reveal reveal-delay-2">Limited availability — secure your dates now</p>
 
-        <div class="cta-buttons reveal reveal-delay-3">
+        <div class="final-cta-buttons reveal reveal-delay-3">
           <a href="https://wa.me/918056732468?text=Hi%2C%20I'm%20interested%20in%20booking%20Aura%20Bliss%20Villa.%20Could%20you%20share%20availability%20and%20pricing%3F"
-            class="btn-warm" target="_blank" rel="noopener">
-            📱 Book via WhatsApp
+            class="btn-gold" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 13.98c-.24.68-1.42 1.3-1.96 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.3-1.65-.59-2.9-1.21-4.79-4.13-4.93-4.32-.15-.19-1.18-1.56-1.18-2.98s.75-2.12 1.01-2.41c.24-.27.57-.38.76-.38.19 0 .38 0 .55.01.18.01.42.07.64.49.24.49.8 1.94.87 2.08.07.14.12.3.02.49-.1.19-.38.49-.55.63-.18.14-.36.31-.15.6.2.3.9 1.49 1.94 2.41 1.34 1.18 2.46 1.55 2.81 1.72.35.18.55.15.76-.08.2-.24.89-1.04 1.13-1.39.24-.36.47-.3.8-.18.32.12 2.06.97 2.41 1.15.36.18.59.27.68.41.09.15.09.86-.15 1.53z" />
+            </svg>
+            Book via WhatsApp
           </a>
-          <a href="tel:+918056732468" class="btn-ghost">
+          <a href="tel:+918056732468" class="btn-outline-light">
             📞 Call to Enquire
           </a>
         </div>
 
-        <p class="cta-contact reveal reveal-delay-4">
+        <p class="final-cta-note reveal reveal-delay-4">
           Or reach us directly at <a href="tel:+918056732468">+91 80567 32468</a>
         </p>
       </div>
@@ -764,7 +809,7 @@
       <div class="footer-inner">
         <div class="footer-brand">Aura <span>Bliss</span> Villa</div>
         <div class="footer-links">
-          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#spaces">Spaces</a>
           <a href="#amenities">Amenities</a>
           <a href="#gallery">Gallery</a>
@@ -778,11 +823,12 @@
 
   <!-- ===================== FLOATING WHATSAPP ===================== -->
   <a href="https://wa.me/918056732468?text=Hi%2C%20I'd%20like%20to%20know%20more%20about%20Aura%20Bliss%20Villa."
-    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" id="whatsappFloat">
     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.502 1.14 6.748 3.072 9.378L1.06 31.296l6.166-1.976c2.506 1.712 5.56 2.716 8.778 2.716C24.828 32.036 32 24.858 32 16.004 32 7.176 24.828 0 16.004 0zm9.51 22.602c-.398 1.122-2.328 2.086-3.254 2.22-.87.118-1.97.17-3.18-.2-0.732-.224-1.672-.524-2.876-1.024-5.06-2.1-8.362-7.216-8.614-7.552s-2.05-2.726-2.05-5.2c0-2.474 1.296-3.69 1.758-4.194.398-.434 1.056-.63 1.684-.63.204 0 .386.01.55.018.462.02.694.048 1 .77.382.898 1.312 3.2 1.426 3.434.118.234.196.508.04.816-.156.312-.234.506-.462.778-.228.274-.48.61-.686.818-.228.234-.466.488-.2.958.266.47 1.184 1.95 2.542 3.16 1.744 1.554 3.214 2.036 3.67 2.264.462.228.732.19.998-.114.274-.312 1.166-1.358 1.478-1.826.308-.468.618-.39 1.042-.234.426.156 2.702 1.274 3.164 1.506.462.234.772.35.886.544.118.196.118 1.124-.28 2.248z" />
     </svg>
+    <span class="whatsapp-tooltip">Chat with us</span>
   </a>
 
   <script src="script.js"></script>
