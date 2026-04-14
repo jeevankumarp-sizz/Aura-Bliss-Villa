@@ -20,6 +20,14 @@
 
 <body>
 
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Aura <span>Bliss</span></div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
   <!-- ===================== NAVIGATION ===================== -->
   <header class="navbar" id="navbar">
     <div class="container">
@@ -53,10 +61,14 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <img src="Pool/Home Section.avif"
+      <img src="Hero Section .avif"
         alt="Aura Bliss Villa — Private pool surrounded by tropical greenery in Auroville" loading="eager">
     </div>
     <div class="hero-overlay"></div>
+
+    <!-- Floating decorative elements -->
+    <div class="hero-decor hero-decor-1"></div>
+    <div class="hero-decor hero-decor-2"></div>
 
     <div class="hero-content">
       <div class="hero-badge-row reveal">
@@ -228,6 +240,7 @@
           <div class="space-card-visual">
             <img src="Pool/Home Section.avif" alt="Private swimming pool with tropical garden setting" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Private Pool</span>
           </div>
           <div class="space-card-body">
             <h3>Private Pool</h3>
@@ -240,6 +253,7 @@
           <div class="space-card-visual">
             <img src="Living Room/Home Section.avif" alt="Spacious living room with comfortable seating" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Living Room</span>
           </div>
           <div class="space-card-body">
             <h3>Living Room</h3>
@@ -253,6 +267,7 @@
             <img src="Bed Room 1/Home Section.avif" alt="Bedroom 1 with comfortable double bed and modern furnishing"
               loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Bedroom One</span>
           </div>
           <div class="space-card-body">
             <h3>Bedroom One</h3>
@@ -265,6 +280,7 @@
           <div class="space-card-visual">
             <img src="Bed Room 2/Home Section.avif" alt="Bedroom 2 with warm, cozy interior" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Bedroom Two</span>
           </div>
           <div class="space-card-body">
             <h3>Bedroom Two</h3>
@@ -276,6 +292,7 @@
           <div class="space-card-visual">
             <img src="Bed Room 3/Home Section.avif" alt="Bedroom 3 designed for relaxation" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Bedroom Three</span>
           </div>
           <div class="space-card-body">
             <h3>Bedroom Three</h3>
@@ -287,6 +304,7 @@
           <div class="space-card-visual">
             <img src="Kitchen/Home Section.avif" alt="Fully equipped modern kitchen with dining setup" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Kitchen & Dining</span>
           </div>
           <div class="space-card-body">
             <h3>Kitchen & Dining</h3>
@@ -299,6 +317,7 @@
           <div class="space-card-visual">
             <img src="Exterior/3.avif" alt="Outdoor seating area with garden view" loading="lazy">
             <div class="space-card-overlay"></div>
+            <span class="space-card-label">Outdoors</span>
           </div>
           <div class="space-card-body">
             <h3>Garden & Outdoors</h3>
@@ -316,6 +335,7 @@
             <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
+        <div class="carousel-dots" id="spacesDots"></div>
         <button class="carousel-btn" id="spacesNext" aria-label="Next space">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round">
@@ -497,6 +517,10 @@
           <div class="gallery-item-overlay"><span>View</span></div>
         </div>
       </div>
+
+      <div class="gallery-cta reveal">
+        <a href="#contact" class="btn-secondary">View Full Gallery & Book</a>
+      </div>
     </div>
   </section>
 
@@ -527,11 +551,19 @@
   <!-- ===================== REVIEWS ===================== -->
   <section class="reviews" id="reviews">
     <div class="container">
+      <div class="section-header center">
+        <span class="section-tag reveal">Guest Love</span>
+        <h2 class="reveal reveal-delay-1">What Our <em>Guests Say</em></h2>
+      </div>
+
       <div class="reviews-top">
         <div class="reviews-score reveal">
-          <div class="score-number">5.0</div>
-          <div class="score-stars">★★★★★</div>
+          <div class="score-badge">
+            <div class="score-number">5.0</div>
+            <div class="score-stars">★★★★★</div>
+          </div>
           <div class="score-meta">100% five-star · 6 reviews</div>
+          <div class="score-label">Guest Favourite</div>
         </div>
 
         <div class="reviews-breakdown reveal reveal-delay-1">
@@ -807,7 +839,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-brand">Aura <span>Bliss</span> Villa</div>
+        <div class="footer-top">
+          <div class="footer-brand">Aura <span>Bliss</span> Villa</div>
+          <p class="footer-tagline">Private luxury in the heart of Auroville</p>
+        </div>
         <div class="footer-links">
           <a href="#experience">Experience</a>
           <a href="#spaces">Spaces</a>
@@ -816,7 +851,9 @@
           <a href="#reviews">Reviews</a>
           <a href="#location">Location</a>
         </div>
-        <div class="footer-copy">© 2026 Aura Bliss Villa · Edayanchavadi, Auroville · Managed by Property Owner</div>
+        <div class="footer-bottom">
+          <div class="footer-copy">© 2026 Aura Bliss Villa · Edayanchavadi, Auroville · Managed by Property Owner</div>
+        </div>
       </div>
     </div>
   </footer>
