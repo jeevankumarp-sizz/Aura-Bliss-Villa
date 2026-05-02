@@ -424,6 +424,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 
+  // ─────────── QUICK BOOK SIDEBAR (Desktop only) ───────────
+  const quickBook = document.getElementById('quickBook');
+  if (quickBook && window.innerWidth > 1024) {
+    const heroSection = document.querySelector('.hero');
+    const ctaSection = document.querySelector('.final-cta');
+
+    window.addEventListener('scroll', () => {
+      const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 600;
+      const ctaTop = ctaSection ? ctaSection.offsetTop - window.innerHeight * 0.5 : Infinity;
+      const scrollY = window.scrollY;
+
+      if (scrollY > heroBottom && scrollY < ctaTop) {
+        quickBook.classList.add('visible');
+      } else {
+        quickBook.classList.remove('visible');
+      }
+    }, { passive: true });
+  }
+
   // ─────────── SMOOTH CURSOR GLOW (Desktop only) ───────────
   if (window.innerWidth > 1024) {
     const glow = document.createElement('div');
